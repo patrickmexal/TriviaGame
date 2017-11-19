@@ -1,0 +1,40 @@
+body {
+    background-image: url("https://images8.alphacoders.com/403/403441.gif");
+}
+
+#jumbo {
+	margin: 20px;
+	background-color: #2da7b5;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Cinzel', serif;
+    border-radius: 10px 10%;
+}
+
+container {
+    width: 200px;
+}
+
+.maincontent {
+    display: inline;
+}
+
+h1 {
+    color: white;
+    font-family: "Libre Barcode 39 Text";
+}
+
+h2 {
+    width: 75;
+    color: white;
+    text-align: center;
+}
+
+.row {
+    align-content: center;
+}
+
+.col-md-6 {
+    text-align: center;
+}
