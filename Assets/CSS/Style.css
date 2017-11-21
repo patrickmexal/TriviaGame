@@ -12,6 +12,7 @@ body {
     border-radius: 10px 10%;
     border-style: solid;
     border-color: silver;
+    border-width: thick;
 }
 
 container {
