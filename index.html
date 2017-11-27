@@ -7,7 +7,10 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" type="text/css" href="Assets/CSS/Style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Julius+Sans+One|Libre+Barcode+39+Text|Orbitron" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,76 +21,84 @@
             </div>
             <!-- Timer Div -->
             <div class="row">
-            	<div id="timer" class="col-md-8">
-            	</div>
-            </div>
-            <div class="row">
-                <div class="col-md-6" "maincontent">
-                    <h2>In what year did Charles Babbage begin his Difference Engine?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">1791</button>
-                    <button type="button" class="btn btn-secondary btn-lg">1808</button>
-                    <button type="button" class="btn btn-primary btn-lg">1814</button>
-                    <button type="button" class="btn btn-secondary btn-lg">1822</button>
-                    <!-- Correct answer is D -->
+                <div id="timer" class="col-md-8">
+                    <button id="start" type="button" class="btn btn-primary-lg">Let's Go!</button>
+                    <button id="clock" class="col-md-8"></button>
                 </div>
-                <div class="col-md-6" "maincontent">
-                    <h2>What was the first known computing device?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">Sun Dagger</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Abacus</button>
-                    <button type="button" class="btn btn-primary btn-lg">Stonehenge</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Astrolabe</button>
-                    <!-- Correct answer is B -->
-                </div>
-                <div class="col-md-6" "maincontent">
-                    <h2>The first commercially available Microprocessor was Intel Model?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">404</button>
-                    <button type="button" class="btn btn-secondary btn-lg">4004</button>
-                    <button type="button" class="btn btn-primary btn-lg">0101</button>
-                    <button type="button" class="btn btn-secondary btn-lg">7880</button>
-                </div>
-                <!-- Correct answer is B -->
-                <div class="col-md-6" "maincontent">
-                    <h2>Author of the first computer algorithm, Lady Ava _________ ?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">Lowell</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Lovelace</button>
-                    <button type="button" class="btn btn-primary btn-lg">Visquith</button>
-                    <button type="button" class="btn btn-secondary btn-lg">Curran</button>
-                </div>
-                <!-- Correct answer is B -->
-                <div class="col-md-6" "maincontent">
-                    <h2>The first computer hard disk drive was made in 1979, what was it's capacity?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">1KB</button>
-                    <button type="button" class="btn btn-secondary btn-lg">5MB</button>
-                    <button type="button" class="btn btn-primary btn-lg">50MB</button>
-                    <button type="button" class="btn btn-secondary btn-lg">112MB</button>
-                </div>
-                <!-- Correct answer is B -->
-                <div class="col-md-6" "maincontent">
-                    <h2>What percentage of the world's money actually exists physically in 2017?</h2>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg">1%</button>
-                    <button type="button" class="btn btn-secondary btn-lg">9%</button>
-                    <button type="button" class="btn btn-primary btn-lg">27%</button>
-                    <button type="button" class="btn btn-secondary btn-lg">45%</button>
-                </div>
-                <!-- Correct answer is B -->
                 <div class="row">
-                    <div id="timer" class="col-lg-6">
+                    <div class="col-md-6" "maincontent" id="babbage">
+                        <h2>In what year did Charles Babbage begin his Difference Engine?</h2>
+                        <br>
+                        <form>
+                            <button type="radio" class="btn btn-primary btn-lg" name="choice" value="1791">1791</button>
+                            <button type="radio" class="btn btn-secondary btn-lg" name="choice" value="1808">1808</button>
+                            <button type="radio" class="btn btn-primary btn-lg" name="choice" value="1814">1814</button>
+                            <button type="radio" class="btn btn-secondary btn-lg" name="choice" value="1822">1822</button>
+                        </form>
+                        <button onclick="submitAnswer()">Submit</button>
+                        <!-- Correct answer is D -->
                     </div>
-                </div>
-                <div class="row">
-                    <div id="spacer" class="col-lg-12">
-                        <h1>Copyright &copy Patrick Mexal 2017</h1>
+                    <div class="col-md-6" "maincontent">
+                        <h2>What was the first known computing device?</h2>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Sun Dagger</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Abacus</button>
+                        <button type="button" class="btn btn-primary btn-lg">Stonehenge</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Astrolabe</button>
+                        <!-- Correct answer is B -->
+                    </div>
+                    <div class="col-md-6" "maincontent">
+                        <h2>The first commercially available Microprocessor was Intel Model?</h2>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">404</button>
+                        <button type="button" class="btn btn-secondary btn-lg">4004</button>
+                        <button type="button" class="btn btn-primary btn-lg">0101</button>
+                        <button type="button" class="btn btn-secondary btn-lg">7880</button>
+                    </div>
+                    <!-- Correct answer is B -->
+                    <div class="col-md-6" "maincontent">
+                        <h2>Author of the first computer algorithm, Lady Ava _________ ?</h2>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Lowell</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Lovelace</button>
+                        <button type="button" class="btn btn-primary btn-lg">Visquith</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Curran</button>
+                    </div>
+                    <!-- Correct answer is B -->
+                    <div class="col-md-6" "maincontent">
+                        <h2>The first computer hard disk drive was made in 1979, what was it's capacity?</h2>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">1KB</button>
+                        <button type="button" class="btn btn-secondary btn-lg">5MB</button>
+                        <button type="button" class="btn btn-primary btn-lg">50MB</button>
+                        <button type="button" class="btn btn-secondary btn-lg">112MB</button>
+                    </div>
+                    <!-- Correct answer is B -->
+                    <div class="col-md-6" "maincontent">
+                        <h2>What percentage of the world's money actually exists physically in 2017?</h2>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">1%</button>
+                        <button type="button" class="btn btn-secondary btn-lg">9%</button>
+                        <button type="button" class="btn btn-primary btn-lg">27%</button>
+                        <button type="button" class="btn btn-secondary btn-lg">45%</button>
+                    </div>
+                    <!-- Correct answer is B -->
+                    <div class="row">
+                        <div id="timer" class="col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="spacer" class="col-lg-12">
+                            <h1>Copyright &copy Patrick Mexal 2017</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--External JS Link -->
+        <script type="text/javascript" src="Assets/Javascript/app.js"></script>
+        <!--JQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

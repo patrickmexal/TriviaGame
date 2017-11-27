@@ -14,8 +14,24 @@ body {
     border-color: silver;
     border-width: thick;
 }
+/*#clock {
+    background-color: black;
+    color: white;
+}
+#timer {
+    color: white;
+    background-color: black;
+}*/
+.btn {
+	border-style: solid;
+	border-color: black;
+}
+#clock {
+	color: white;
+	font-size: 50px;
+}
 
-container {
+#container {
     width: 200px;
 }
 
