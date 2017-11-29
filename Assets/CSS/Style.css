@@ -14,6 +14,9 @@ body {
     border-color: silver;
     border-width: thick;
 }
+.col-md-6 {
+    background-color: grey;
+}
 /*radio {
     color: black;
     color: white;
