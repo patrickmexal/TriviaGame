@@ -16,6 +16,8 @@ body {
 }
 .col-md-6 {
     background-color: grey;
+    border-radius: 10px;
+    
 }
 /*radio {
     color: black;
