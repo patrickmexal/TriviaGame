@@ -30,10 +30,10 @@
                         <h2>In what year did Charles Babbage begin his Difference Engine?</h2>
                         <br>
                         <form>
-                            <button type="radio" class="btn btn-primary btn-lg" name="choice" value="1791">1791</button>
-                            <button type="radio" class="btn btn-secondary btn-lg" name="choice" value="1808">1808</button>
-                            <button type="radio" class="btn btn-primary btn-lg" name="choice" value="1814">1814</button>
-                            <button type="radio" class="btn btn-secondary btn-lg" name="choice" value="1822">1822</button>
+                            <input type="radio" class="custom-control-input" name="choice" value="1791">1791</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="1808">1808</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="1814">1814</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="1822">1822</input>
                         </form>
                         <button onclick="submitAnswer()">Submit</button>
                         <!-- Correct answer is D -->
@@ -41,64 +41,77 @@
                     <div class="col-md-6" "maincontent">
                         <h2>What was the first known computing device?</h2>
                         <br>
-                        <button type="button" class="btn btn-primary btn-lg">Sun Dagger</button>
-                        <button type="button" class="btn btn-secondary btn-lg">Abacus</button>
-                        <button type="button" class="btn btn-primary btn-lg">Stonehenge</button>
-                        <button type="button" class="btn btn-secondary btn-lg">Astrolabe</button>
+                        <form>
+                            <input type="radio" class="custom-control-input" name="choice" value="Sun Dagger">Sun Dagger</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="Abacus">Abacus</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="Stonehenge">Stonehenge</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="Astrolabe">Astrolabe</input>
+                        </form>
                         <!-- Correct answer is B -->
+                        <button onclick="submitAnswer()">Submit</button>
                     </div>
                     <div class="col-md-6" "maincontent">
                         <h2>The first commercially available Microprocessor was Intel Model?</h2>
                         <br>
-                        <button type="button" class="btn btn-primary btn-lg">404</button>
-                        <button type="button" class="btn btn-secondary btn-lg">4004</button>
-                        <button type="button" class="btn btn-primary btn-lg">0101</button>
-                        <button type="button" class="btn btn-secondary btn-lg">7880</button>
-                    </div>
-                    <!-- Correct answer is B -->
-                    <div class="col-md-6" "maincontent">
-                        <h2>Author of the first computer algorithm, Lady Ava _________ ?</h2>
-                        <br>
-                        <button type="button" class="btn btn-primary btn-lg">Lowell</button>
-                        <button type="button" class="btn btn-secondary btn-lg">Lovelace</button>
-                        <button type="button" class="btn btn-primary btn-lg">Visquith</button>
-                        <button type="button" class="btn btn-secondary btn-lg">Curran</button>
-                    </div>
-                    <!-- Correct answer is B -->
-                    <div class="col-md-6" "maincontent">
-                        <h2>The first computer hard disk drive was made in 1979, what was it's capacity?</h2>
-                        <br>
-                        <button type="button" class="btn btn-primary btn-lg">1KB</button>
-                        <button type="button" class="btn btn-secondary btn-lg">5MB</button>
-                        <button type="button" class="btn btn-primary btn-lg">50MB</button>
-                        <button type="button" class="btn btn-secondary btn-lg">112MB</button>
-                    </div>
-                    <!-- Correct answer is B -->
-                    <div class="col-md-6" "maincontent">
-                        <h2>What percentage of the world's money actually exists physically in 2017?</h2>
-                        <br>
-                        <button type="button" class="btn btn-primary btn-lg">1%</button>
-                        <button type="button" class="btn btn-secondary btn-lg">9%</button>
-                        <button type="button" class="btn btn-primary btn-lg">27%</button>
-                        <button type="button" class="btn btn-secondary btn-lg">45%</button>
-                    </div>
-                    <!-- Correct answer is B -->
-                    <div class="row">
-                        <div id="timer" class="col-lg-6">
+                        <form>
+                            <input type="radio" class="custom-control-input" name="choice" value="404">404</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="4004">4004</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="0101">0101</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="7880">7880</input>
+                        </form>
+                        <button onclick="submitAnswer()">Submit</button>
+                        <!-- Correct answer is B -->
+                        <div class="col-md-6" "maincontent">
+                            <h2>Author of the first computer algorithm, Lady Ava _________ ?</h2>
+                            <br>
+                            <form>
+                                <input type="radio" class="custom-control-input" name="choice" value="Lowell">Lowell</input>
+                                <input type="radio" class="custom-control-input" name="choice" value="Lovelace">Lovelace</input>
+                                <input type="radio" class="custom-control-input" name="choice" value="Visquith">Visquith</input>
+                                <input type="radio" class="custom-control-input" name="choice" value="Curran">Curran</input>
+                            </form>
+                            <button onclick="submitAnswer()">Submit</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div id="spacer" class="col-lg-12">
-                            <h1>Copyright &copy Patrick Mexal 2017</h1>
+                        <!-- Correct answer is B -->
+                        <div class="col-md-6" "maincontent">
+                            <h2>The first computer hard disk drive was made in 1979, what was it's capacity?</h2>
+                          <form>
+                            <input type="radio" class="custom-control-input" name="choice" value="1KB">1KB</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="5MB">5MB</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="50MB">50MB</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="112MB">112MB</input>
+                        </form>
+                        <button onclick="submitAnswer()">Submit</binput
+                        </div>
+                            <!-- Correct answer is B -->
+                        <div class="col-md-6" "maincontent">
+                            <h2>What percentage of the world's money actually exists physically in 2017?</h2>
+                            <br>
+                            <form>
+                            <input type="radio" class="custom-control-input" name="choice" value="1%">1%</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="9%">9%</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="27%">27%</input>
+                            <input type="radio" class="custom-control-input" name="choice" value="45%">45%</input>
+                        </form>
+                        <button onclick="submitAnswer()">Submit</button>
+                        </div>
+                        <!-- Correct answer is B -->
+                        <div class="row">
+                            <div id="timer" class="col-lg-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="spacer" class="col-lg-12">
+                                <h1>Copyright &copy Patrick Mexal 2017</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--External JS Link -->
-        <script type="text/javascript" src="Assets/Javascript/app.js"></script>
-        <!--JQuery CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!--External JS Link -->
+            <script type="text/javascript" src="Assets/Javascript/app.js"></script>
+            <!--JQuery CDN -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

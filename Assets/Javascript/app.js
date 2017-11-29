@@ -15,13 +15,32 @@ function submitAnswer() {
   } 
   /* If user clicks the submit button without selecting any option, alert box should be say "please select choice answer".*/
 
-  /*if(!checked) {
+  if(!checked) {
     alert("please select choice answer");
     return;
-  }*/
+  } 
   // Correct answer
   if(userAnswer === "1822") {
      alert("Answer is correct!");
+     correct++;
+     console.log(correct);
+  } else if (userAnswer === "Abacus") {
+    alert("Answer is correct!");
+    correct++;
+    console.log(correct);
+  } else if (userAnswer === "4004") {
+    alert("Answer is correct!");
+    correct++;
+    console.log(correct)
+  } else if (userAnswer ==="5MB") {
+    alert("Answer is correct!");
+    correct++;
+    console.log(correct);
+    console.log(incorrect);
+  } else if (userAnswer === "Lovelace") {
+    alert("Answer is correct!");
+    correct++;
+    console.log(correct);
   }
   // Incorrect answer
   else {
@@ -30,7 +49,7 @@ function submitAnswer() {
   
 }
 
-console.log(correct);
+
 /*
 function time() {
  	for (time = 60; time > -1; time--) {
