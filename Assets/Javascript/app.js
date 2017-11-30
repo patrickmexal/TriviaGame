@@ -41,13 +41,36 @@ function submitAnswer() {
     alert("Answer is correct!");
     correct++;
     console.log(correct);
+  } else if (userAnswer === "9%") {
+    alert("Answer is correct!");
+    correct++;
+    console.log(correct);
   }
   // Incorrect answer
   else {
      alert("Answer is wrong!");
+     correct--;
+     console.log(incorrect);
   }
   
 }
+$document.ready(function() {
+  
+}
+/*
+//Function to keep score.
+function gameOver() {
+  $("#scoreboard1").html(correct);
+  $("#scoreboard2").html(incorrect);
+}
+gameOver();
+
+//setTimeout for game clock
+function setTimeout(gameOver, 60000;) {
+  $(#start).click()
+}
+
+setTimeout();
 
 
 /*
