@@ -54,9 +54,27 @@ function submitAnswer() {
   }
   
 }
-$document.ready(function() {
-  
-}
+
+
+function countDown (count) {
+      if (count > -1) {
+       var d = document.getElementById("clock");
+       d.innerHTML = count;
+       setTimeout (function() { countDown(count-1); }, 1000);
+       }
+      //else
+       //document.location = "someotherpage.html";
+    }
+    $("#start").click(countDown(60));
+
+    if (countDown === 0) {
+      console.log(correct);
+      alert("Time is up!")
+      $("#scoreboard1").html(correct);
+      $("#scoreboard2").html(incorrect);
+    }
+
+    
 /*
 //Function to keep score.
 function gameOver() {
