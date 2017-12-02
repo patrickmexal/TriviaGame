@@ -49,7 +49,7 @@ function submitAnswer() {
   // Incorrect answer
   else {
      alert("Answer is wrong!");
-     correct--;
+     incorrect++;
      console.log(incorrect);
   }
   
